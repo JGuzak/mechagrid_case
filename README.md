@@ -89,9 +89,11 @@ While being entirely aestetic, there can be quite a bit of light bleed from key 
 
 ## Assembly
 
+It is recommended to read instructions all the way through before following along with your case assembly.
+
 *Make sure to test your mechatrellis board and driver before assembling with the case. Once the boards are assembled in the case, troubleshooting will require removing the mechatrellis boards from the case!*
 
-It is recommended to read instructions all the way through before following along with your case assembly.
+*Be careful when dry fitting case parts (perticularly the metal rods), go slow, use small taps with a soft headed mallet if necessisary.*
 
 <img src="images/8x16_caseless_powered.JPG" width=60%>
 
@@ -99,7 +101,7 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 
 <img src="images/pcb_back_jct_connector.JPG" width=60%>
 
-## 8x8 Case Assembly
+### 8x8 Assembly
 
 1. Embed heat set inserts for dink-ii board. *Locations noted below*
 
@@ -109,26 +111,55 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 
 <img src="images/8x8_dink-ii.JPG" width=80%>
 
-### 8x16 Case  Assembly
+### 8x16 Case Assembly
+
+1. Insert metal rods into each case part one at a time. The ideal fit for the rods are when they can't freely slide around but can be removed by bare hand.
+
+*If segments get stuck, use a hand clamp and twist the rod while pulling until the rod can be removed by hand.*
+
+<img src="images/8x16_metal_rods_1.JPG" width=40%><img src="images/8x16_metal_rods_2.JPG" width=40%>
+
+<img src="images/8x16_metal_rods_3.JPG" width=40%><img src="images/8x16_metal_rods_4.JPG" width=40%>
+
+2. Apply all 7 heatset inserts into the three case parts.
+
+<img src="images/8x16_heatset_inserts_1.JPG" width=80%>
+
+*When add the two inserts next to the usb c port, some soldering irons will touch the edge of the wall. When fully assembled this blemish is almost entirely hidden.*
+
+<img src="images/8x16_heatset_inserts_2.JPG" width=80%>
+
+3. Insert all 4 rods into `8x16_case_left` or `8x16_case_right`.
+
+<img src="images/8x16_case_assembly_1.JPG" width=80%>
+
+4. Ensure the middle is oriented correctly and slide it onto the metal rods.
+5. Loosly insert a `8mm` M2.5 bolt into one of the case connection holes.
+
+<img src="images/8x16_case_assembly_2.JPG" width=80%>
+
+6. Add the final case piece and carefuly ensure that there isn't a gap between the case parts.
+
+*If needed, use a soft mallet and a towel to gentily tap the case parts together. Make sure to tap the edge closer to the bottom of the case rather than the free floating wall, this will reduce the chance of accidentally cracking the side of the case.*
+
+| Gap | No gap |
+| - | - |
+| <img src="images/8x16_case_assembly_gap.JPG" width=45%> | <img src="images/8x16_case_assembly_no_gap.JPG" width=45%> |
+
+7. Insert and tighten the remaining `8mm` M2.5 bolts into the case.
+8. *(Optional: Cover case bolts with ESD tape.)*
+
+<img src="images/8x16_case_assembled.JPG" width=80%>
+
+### 8x16 Full Assembly
 
 <img src="images/8x16_pcb_back.JPG" width=60%>
 
-1. Embed heat set inserts in all three case parts. *Locations noted below*
+1. With the key switches facing up, attach the light barrier parts to the pcba using M2.5 bolts *(`8mm` if using short_light_barrier, `10mm` if using long_light_barrier.)*.
 
-<img src="images/8x16_heatset_inserts.JPG" width=80%>
+<img src="images/8x16_light_barrier.JPG" width=80%>
 
-2. With the key switches facing up, attach the light barrier parts to the pcba using M2.5 bolts *(`8mm` if using short_light_barrier, `10mm` if using long_light_barrier.)*.
-
-3. Carefully insert metal rods  into one of the end case parts.
-
-<img src="images/8x16_metal_rods.JPG" width=80%>
-
-4. Slide middle case part onto metal rods *(Ensure the heatset inserts and through holes are aligned, you may need to use a mallet to help align the parts. Use a towel or pad to reduce the chance of cracking or breaking case parts. I recommend more light taps rather than fewer hard smacks, harder smacks to align parts.)*
-5. Insert and tighten 4x `8mm` M2.5 bolts to secure the three case parts together. *(Optional: Cover case bolts with ESD tape.)*
-
-<img src="images/8x16_assembled_case.JPG" width=80%>
-
-6. Place the dink-ii board into the case and secure with 3x `4mm` M2.5 bolts *(If alignment isn't perfect, try lightly threading all three bolts before tightening until the `dink-ii` board doesn't move around.)*
+1. Place the dink-ii board into the case and secure with 3x `4mm` M2.5 bolts *(If alignment isn't perfect, try lightly threading all three bolts before tightening until the `dink-ii` board doesn't move around.)*
 
 <img src="images/8x16_dink-ii.JPG" width=80%>
 
@@ -137,15 +168,23 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 
 <img src="images/8x16_dink-ii_mechagrid_connection.JPG" width=80%>
 
-9. Place case onto mechagrid pcba.
-10. Align and secure the case with `8mm` M2.5 bolts. *(Not all bolts are required, only one bolt per 4x4 board is necessary but all 3 are recommended for a super secure connection.)*
-11. Apply rubber feet to inserts.
+9. *(Optional: Connect the dink-ii to a norns via USB and load up a test script that uses grid. Make sure to follow the Norns Setup section.)*
+
+<img src="images/8x16_sanity_check.JPG" width=80%>
+
+10. Place case onto mechagrid pcba.
+11. Align and secure the case with `8mm` M2.5 bolts. *(Not all bolts are required, only one bolt per 4x4 board is necessary but all 3 are recommended for a super secure connection.)*
+12. Apply rubber feet to the bottom.
 
 <img src="images/8x16_back_case_assembled.JPG" width=80%>
 
 ### Norns Setup
 
 <img src="images/norns_device_setup.JPG" width=60%>
+
+1. Navigate to `System->Devices->Grid`.
+2. Select `neotrellis-monome-{some set of numbers}`.
+3. Load up a test script to make sure the grid is working.
 
 ## Troubleshooting / FAQ
 
