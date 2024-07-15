@@ -40,7 +40,7 @@ Major shout out to Steve from Denki Oto for designing and building the mechatrel
 
 ## Common Parts
 
-- 1x assembled mechatrellis board (`8x8` or `8x16`) and dink-ii board (Boards are available at the [Denki Oto Shop](https://denki-oto.weebly.com/))
+- 1x assembled mechatrellis board (`8x8` or `8x16`) and dink-ii board (Boards are available at the [Denki Oto Shop](http://www.denki-oto.com/))
 - 1x matching case part(s) for the mechatrellis board
 - 3x 4mm M2.5 bolts
 - 3x M2.5 heatset inserts (7x if building `8x16` grid)
