@@ -34,10 +34,10 @@ THIS PROJECT IS STILL UNDER CONSTRUCTION. Design and documentation is not finish
 
 Major shout out to Steve from Denki Oto for designing and building the mechatrellis boards!
 
-FAQ/troubleshooting contributions:
+Docs/FAQ/troubleshooting contributions:
 
 - Appa
-- 
+- EchoEs Bats
 
 ## BOM
 
