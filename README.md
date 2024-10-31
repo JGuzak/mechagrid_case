@@ -1,28 +1,28 @@
 # Mechagrid Case
 
-A case for the [mechatrellis_grid](https://github.com/okyeron/shieldXL/) by Denki Oto
+A case for 8x8 and 8x16 variants of the [mechatrellis_grid](https://www.denki-oto.com/store/p114/MechaTrellis_Driver_PCB_4x4.html) by Denki Oto
 
 <img src="images/promo_1.JPG" width=100%>
 
 - [Mechagrid Case](#mechagrid-case)
-- [DISCLAIMERS](#disclaimers)
-- [Credits](#credits)
-- [BOM](#bom)
-  - [Common Parts](#common-parts)
-  - [8x8 Parts](#8x8-parts)
-  - [8x16 Parts](#8x16-parts)
-- [Models \& Printing](#models--printing)
-  - [8x8 Case](#8x8-case)
-  - [8x16 Case](#8x16-case)
-  - [Light Barrier](#light-barrier)
-- [Assembly](#assembly)
-  - [8x16 Case Assembly](#8x16-case-assembly)
-  - [8x16 Full Assembly](#8x16-full-assembly)
-  - [8x8 Assembly](#8x8-assembly)
+  - [DISCLAIMERS](#disclaimers)
+  - [Credits](#credits)
+  - [BOM](#bom)
+    - [8x8 Parts](#8x8-parts)
+    - [8x16 Parts](#8x16-parts)
+  - [Models \& Printing](#models--printing)
+    - [Part Matrix](#part-matrix)
+    - [Light Barrier](#light-barrier)
+  - [Assembly](#assembly)
+    - [8x8 Assembly](#8x8-assembly)
+    - [8x16 Assembly](#8x16-assembly)
+      - [8x16 1 Part Case](#8x16-1-part-case)
+      - [8x16 3 Part Case Assembly](#8x16-3-part-case-assembly)
+      - [8x16 Board and Case Assembly](#8x16-board-and-case-assembly)
   - [Norns Setup](#norns-setup)
-- [Troubleshooting / FAQ](#troubleshooting--faq)
+  - [Troubleshooting / FAQ](#troubleshooting--faq)
 
-# DISCLAIMERS
+## DISCLAIMERS
 
 This not supported by Denki Oto and they are not responsible for assisting with assembly or troubleshooting.
 
@@ -30,73 +30,103 @@ THIS PROJECT IS STILL UNDER CONSTRUCTION. Design and documentation is not finish
 
 <img src="images/promo_2.JPG" width=80%>
 
-# Credits
+## Credits
 
 Major shout out to Steve from Denki Oto for designing and building the mechatrellis boards!
 
-# BOM
+FAQ/troubleshooting contributions:
+
+- Appa
+- 
+
+## BOM
 
 <img src="images/bom_8x16.JPG" width=80%>
 
-## Common Parts
+*Boards are available at the [Denki Oto Shop](http://www.denki-oto.com/)*
 
-- 1x assembled mechatrellis board (`8x8` or `8x16`) and dink-ii board (Boards are available at the [Denki Oto Shop](http://www.denki-oto.com/))
-- 1x matching case part(s) for the mechatrellis board
+*Pictured grid assembled with Choc silver keyswitches and Chocfox CFX translucent caps.*
+
+### 8x8 Parts
+
+- 1x assembled 8x8 mechatrellis board
+- 1x dink-ii board
 - 3x 4mm M2.5 bolts
-- 3x M2.5 heatset inserts (7x if building `8x16` grid)
-- Key switches
-  - Pictured grid assembled with Choc silver keyswitches
-- Key switch caps
-  - Pictured grid assembled with Chocfox CFX translucent caps
+- 3x M2.5 heat set inserts
+- 4x 20mm x 2mm circular rubber feet
+- 64x key switches
+- 64x key switch caps
+
+*If using short key switches like chocs:*
+
+- 10x 8mm M2.5 bolts
+- 4x 6mm M2.5 bolts
+
+*If using full size key switches:*
+
+- 14x 8mm M2.5 bolts
+
+### 8x16 Parts
+
+- 1x assembled 8x16 mechatrellis board
+- 3x 4mm M2.5 bolts
+- 6x 20mm x 2mm circular rubber feet
+- 128x key switches
+- 128x key switch caps
+
+*If using short key switches like chocs:*
+
+- 22x 8mm M2.5 bolts
+- 8x 6mm M2.5 bolts
+
+*If using full size key switches:*
+
+- 30x 8mm M2.5 bolts
+
+There are two ways to print the 8x16 case;
+
+*1 part case:*
+
+- 3x M2.5 heatset inserts
+
+*3 part case:*
+
+- 7x M2.5 heatset inserts
+- 4x 4mm diameter 300mm long metal rods
+- +4 8mm M2.5 bolts
 - *Optional:* ESD Tape
 
-## 8x8 Parts
-
-- 4x 20mm x 2mm circular rubber feet
-- 12x 8mm M2.5 bolts (16x if building with `short_light_barrier`)
-- 4x 10mm M2.5 bolts (none if building with `short_light_barrier`)
-
-## 8x16 Parts
-
-- 6x 20mm x 2mm circular rubber feet
-- 24x 8mm M2.5 bolts (32x if building with `short_light_barrier`)
-- 8x 10mm M2.5 bolts (none if building with `short_light_barrier`)
-- 4x 4mm diameter 300mm long metal rods
-
-# Models & Printing
+## Models & Printing
 
 STLs made with love in [Blender](https://www.blender.org/) and [CAD Sketcher](https://www.cadsketcher.com/).
 
 gcode and prusa slicer files can be found in `/prints`, stls in `/models`. Tested with PLA on Prusa MK4 printers.
 
-Depending on the size of the mechatrellis board, choose the right parts.
+### Part Matrix
 
-## 8x8 Case
+There are a few variations of this case. To keep things as clear as possible, refer to the part matrix below:
 
-This is a single print part.
+| Part               | 8x8 Case     | 8x16 3 Part Case | 8x16 1 Part Case |
+| ------------------ | ------------ | ---------------- | ---------------- |
+| 8x8_case           | x            |                  |                  |
+| 8x8_light_barrier  | x (optional) | x (optional)     | x (optional)     |
+| 8x16_case          |              |                  | x                |
+| 8x16_case_left     |              | x                |                  |
+| 8x16_case_middle   |              | x                |                  |
+| 8x16_case_right    |              | x                |                  |
+| 8x16_light_barrier |              | x (optional)     | x (optional)     |
 
-- 8x8_case
-- 8x8_light_barrier
+There are two variations of the light barriers. The short version is roughly 3.5mm tall, designed for choc switches, and the tall version is around 6mm tall, designed for full sized keys.
 
-## 8x16 Case
-
-3D printable parts are broken down into multiple pieces. Make sure you print everything.
-
-- 8x16_case_left
-- 8x16_case_middle
-- 8x16_case_right
-- 8x8_light_barrier
-- 8x16_light_barrier
-
-## Light Barrier
+### Light Barrier
 
 While being entirely aestetic, there can be quite a bit of light bleed from key to key. Included are models for a light barrier that reduces bleed between keys.
 
-| Without | With|
-| - | - |
+| Without                                            | With                                            |
+| -------------------------------------------------- | ----------------------------------------------- |
 | <img src="images/no_light_barrier.JPG" width=100%> | <img src="images/light_barrier.JPG" width=100%> |
 
-# Assembly
+## Assembly
 
 It is recommended to read instructions all the way through before following along with your case assembly.
 
@@ -110,7 +140,39 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 
 <img src="images/pcb_back_jct_connector.JPG" width=80%>
 
-## 8x16 Case Assembly
+[8x8 Assembly](###-8x8-Assembly)
+[8x16 Assembly](###-8x16-Assembly)
+
+### 8x8 Assembly
+
+*THIS ISN'T READY YET*
+
+1. Embed the 3 heat set inserts for dink-ii board. *Locations noted below*
+
+<img src="images/8x8_heatset_inserts.JPG" width=80%>
+
+2. Place the dink-ii board into the case and secure with 3x `4mm` M2.5 bolts *(If alignment isn't perfect, try lightly threading all three bolts before tightening until the `dink-ii` board doesn't move around.)*
+
+<img src="images/8x8_dink-ii.JPG" width=80%>
+
+3. Set the mechagrid bord face down (Recommended to place pcba on a protective cloth.)
+4. Connect the `JCT` cable between dink-ii and mechagrid pcba.
+
+<img src="images/8x8_dink-ii_mechagrid_connection.JPG" width=80%>
+
+5. *(Optional: Connect the dink-ii to a norns via USB and load up a test script that uses grid. Make sure to follow the Norns Setup section.)*
+6. Insert and tighten `8mm` M2.5 bolts *(Only 1 per trellis board is required but it's recommended to use as many bolts as possible.)*
+
+<img src="images/8x8_case_assembled_2.JPG" width=80%>
+
+### 8x16 Assembly
+
+#### 8x16 1 Part Case
+
+1. Embed the 3 heatset inserts into the case.
+2. Jump ahead to [Board and Case Assembly](###-8x16-Board-and-Case-Assembly)
+
+#### 8x16 3 Part Case Assembly
 
 <img src="images/8x16_case_unassembled.JPG" width=80%>
 
@@ -120,7 +182,7 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 
 <img src="images/8x16_metal_rods_1.JPG" width=80%>
 
-1. Apply all 7 heatset inserts into the three case parts.
+1. Embed the 7 heatset inserts into the three case parts.
 
 <img src="images/8x16_heatset_inserts_1.JPG" width=80%>
 
@@ -143,18 +205,16 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 
 *If needed, use a soft mallet and a towel to gentily tap the case parts together. Make sure to tap the edge closer to the bottom of the case rather than the free floating wall, this will reduce the chance of accidentally cracking the side of the case.*
 
-<img src="images/8x16_case_edge.JPG" width=100%>
+| Gap                                                     | No gap                                                     |
+| ------------------------------------------------------- | ---------------------------------------------------------- |
+| <img src="images/8x16_case_assembly_gap.JPG" width=45%> | <img src="images/8x16_case_assembly_no_gap.JPG" width=45%> |
 
-| Gap | No gap |
-| - | - |
-| <img src="images/8x16_case_assembly_gap.JPG" width=100%> | <img src="images/8x16_case_assembly_no_gap.JPG" width=100%> |
-
-7. Insert and tighten the remaining `8mm` M2.5 bolts into the case.
-8. *(Optional: Cover case bolts with ESD tape.)*
+1. Insert and tighten the remaining `8mm` M2.5 bolts into the case.
+2. *(Optional: Cover case bolts with ESD tape.)*
 
 <img src="images/8x16_case_assembled.JPG" width=80%>
 
-## 8x16 Full Assembly
+#### 8x16 Board and Case Assembly
 
 1. On the light barrier, note that the vertical bars are thicker than the horizontal ones. This alignment is important.
 
@@ -194,28 +254,6 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 
 <img src="images/promo_3.JPG" width=80%>
 
-## 8x8 Assembly
-
-*THIS ISN'T READY YET*
-
-1. Embed heat set inserts for dink-ii board. *Locations noted below*
-
-<img src="images/8x8_heatset_inserts.JPG" width=80%>
-
-2. Place the dink-ii board into the case and secure with 3x `4mm` M2.5 bolts *(If alignment isn't perfect, try lightly threading all three bolts before tightening until the `dink-ii` board doesn't move around.)*
-
-<img src="images/8x8_dink-ii.JPG" width=80%>
-
-3. Set the mechagrid bord face down (Recommended to place pcba on a protective cloth.)
-4. Connect the `JCT` cable between dink-ii and mechagrid pcba.
-
-<img src="images/8x8_dink-ii_mechagrid_connection.JPG" width=80%>
-
-5. *(Optional: Connect the dink-ii to a norns via USB and load up a test script that uses grid. Make sure to follow the Norns Setup section.)*
-6. Insert and tighten `8mm` M2.5 bolts *(Only 1 per trellis board is required but it's recommended to use as many bolts as possible.)*
-
-<img src="images/8x8_case_assembled_2.JPG" width=80%>
-
 ## Norns Setup
 
 <img src="images/norns_device_setup.JPG" width=80%>
@@ -224,6 +262,6 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 2. Select `neo-monome-m{some set of numbers}`. *(If you compiled custom firmware, make sure this entry matches the firmware name.)*
 3. Load up a test script to make sure the grid is working.
 
-# Troubleshooting / FAQ
+## Troubleshooting / FAQ
 
 Please submit issues via github or message me on discord.
