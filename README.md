@@ -38,6 +38,7 @@ Docs/FAQ/troubleshooting contributions:
 
 - Appa
 - EchoEs Bats
+- okyeron
 
 ## BOM
 
@@ -136,9 +137,9 @@ It is recommended to read instructions all the way through before following alon
 
 <img src="images/8x16_caseless_powered.JPG" width=80%>
 
-Any JCT port can be used for connecting dink-ii to the mechatrellis boards however, when viewing from the back, these case designs use the top right most board to connect the mechatrellis and dink-ii boards.
+Any JST port can be used for connecting dink-ii to the mechatrellis boards however, when viewing from the back, these case designs use the top right most board to connect the mechatrellis and dink-ii boards.
 
-<img src="images/pcb_back_jct_connector.JPG" width=80%>
+<img src="images/pcb_back_jst_connector.JPG" width=80%>
 
 [8x8 Assembly](###-8x8-Assembly)
 [8x16 Assembly](###-8x16-Assembly)
@@ -156,7 +157,7 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 <img src="images/8x8_dink-ii.JPG" width=80%>
 
 3. Set the mechagrid bord face down (Recommended to place pcba on a protective cloth.)
-4. Connect the `JCT` cable between dink-ii and mechagrid pcba.
+4. Connect the `JST` cable between dink-ii and mechagrid pcba.
 
 <img src="images/8x8_dink-ii_mechagrid_connection.JPG" width=80%>
 
@@ -233,7 +234,7 @@ Any JCT port can be used for connecting dink-ii to the mechatrellis boards howev
 <img src="images/8x16_dink-ii.JPG" width=80%>
 
 4. Set the mechagrid bord face down (Recommended to place pcba on a protective cloth.)
-5. Connect the `JCT` cable between dink-ii and mechagrid pcba.
+5. Connect the `JST` cable between dink-ii and mechagrid pcba.
 
 <img src="images/8x16_dink-ii_mechagrid_connection.JPG" width=80%>
 
